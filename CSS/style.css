@@ -1,0 +1,107 @@
+*{
+padding: 0;
+margin: 0;
+}
+
+
+body {
+	font-size: 20px;
+	color: white;
+	font-family: Times;
+	font-style: italic;
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../IMAGES/background.jpg');
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+
+}
+h4{
+	color:white;
+	text-align:left;
+	font-family: Times;
+	font-style: italic;
+	
+	}
+.row{
+	max-width:1180px;	
+	margin: auto;
+	
+}
+
+.name{
+	height: 100px;
+	width: auto;
+	float: left;
+	margin-top: 20px;
+	margin-left: 1cm;
+	border-radius: 10px;
+	
+}
+
+.main-nav{
+	float: right;
+	margin-top: 60px;
+	
+}
+.main-nav li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 40px;
+}
+.main-nav li a{
+	padding: 5px 0;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%; 
+	font-weight: 100;
+	
+}
+.main-nav li a:hover{
+	color: hotpink;
+}
+
+.colorchange{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: animation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;	
+}
+@keyframes animation {
+	0%   {letter-spacing: 1.2em; color:red; left:0px; top:0px;}/* can use from and to */
+	50%  {color:yellow; left:200px; top:80px;}
+	100% {letter-spacing: 0.2em; color:green; left:0px; top:0px;}
+  }
+  .contact{
+	margin-top: 60px;
+	margin-left: 45%;
+
+}
+.contact li{
+	display: inline-block;
+	list-style: none;
+	align-self: center;
+	
+}
+#stylefooter{
+	
+		height: 30px;
+		width: auto;
+		background-color: white;
+		
+	  
+}
+#demo{
+	color:white;
+	background-color: purple;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	margin-left: 1cm;
+	padding: 0.2cm;
+	width: 33%; 
+}
+
