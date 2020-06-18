@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta name="description" content="Personal PORTFOLIO ">
+			<meta name="keywords" content="HTML,CSS,JavaScript">
+			<meta name="author" content="Sayuj Singh">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sayuj Singh : BLOG</title>
+		<link rel="stylesheet" href="../CSS/style.css">						
+	</head>
+	<body>
+		<header>
+			<h4>BLOG</h4>
+			<nav>
+				<div class="row">			
+					<a href = "HomePage.html"> <img src = "../IMAGES/name.png" class = "name"></a>
+					<ul class= "main-nav" >
+						<li><a href="CV.html">CV AND PORTFOLIO</a></li>
+						<li><a href="Blog.html" style="color:yellow">BLOG</a></li>
+						<li><a href="Research.html">Research Section </a></li>
+						<li><a href="contact.html">CONTACT PAGE</a></li>
+					</ul>	
+				</div>
+			
+			</nav>	
+		</header>
+		<div class="main">
+			<div> <h1>How technology has affected my daily life?</h1>
+				<br>
+				<br><img src = "../IMAGES/sayuj.jpg" style = "border-radius: 50%; height:70px;width:auto ;float: left; padding-right: 10px;">
+				<h8 style="padding-top: 20px;">By,<a href="HomePage.html" Style="color:crimson;">Sayuj Singh </a></h8>
+				<br><h8>05/May/2019</h8>
+				<p><br>Our life has been slowly taken over by technology. Technology has taken an integral part in our life, it has been a status symbol for people for living a modern life. Without the invention of science and technology our life would have to face various difficulty in doing different work which are very easy compared to our past. <br></p>
+				
+				<p><br>Life wouldn’t have been the same if there wasn’t a rapid growth in development of Science and Technology. It has affected Food, Entertainment, Finance, and many more industries which plays vital role to maintain quality life of people.<br></p>
+				<p><br>Technology has helped me to grow, it has helped me to learn and to continue learning. In fact, through the use of technology, it has given me knowledge about programming and web development. Whenever I got stuck on problems internet has provided me with the knowledge for solving it.
+				<P><br>It has created a social platform in which people can share their knowledge between millions of people within seconds. It has made keeping long distance relationship very easy which has improved the social life of the people. Communicating with friends and family has been very easy due to the use of technology. <br></p>
+				<p><br>Searching for information is a lot quicker and more useful, but on the flip side there is so much opinion out there that real news can get lost due to fake news, opinion. It’s has made video games much more fun, when you can interact with people all over the globe in MMOs and allows co-op mode on a remote server without having to host on your own equipment.<br></p>
+				<p><br>Without technology our life would be bland and I would not have been able to do all the that I have just told. <br></p>	
+
+			</div>
+		</div>
+		<div class="main">
+				<div> <h1>Why Big Company are Investing in Artificial Intelligence?</h1>
+					<br><img src = "../IMAGES/sayuj.jpg" style = "border-radius: 50%; height:70px;width:auto ;float: left; padding-right: 10px;">
+					<h8 style="padding-top: 20px;">By,<a href="HomePage.html" Style="color:crimson;">Sayuj Singh </a></h8>
+					<br><h8>08/May/2019</h8>
+					<br><br>
+					<p>Artificial Intelligence also called (AI) is an area of computer science that aims to create a machine or program which is able to take logical decision and action like a human intelligence would take. It consists of vast knowledge of skill and programming to develop an AI. Capabilities currently classified as AI include successfully understanding human speech, competing at a high level in strategic game systems (such as Chess), self-driving cars, and interpreting complex data. </p><br><br>
+					<p>AI is usually defined as the science of making computers do things that require intelligence when done by humans. AI study How to make computers do things which, at moment people do better. </p><br><br>
+					<p>Big Company Like Google, Amazon, Apple, Tesla etc are investing billions of dollars in research and development of AI. AI has been the cornerstone for a new wave of personalization and customer experience. There are using AI to predict the user requirements and information which provides improves user experiences. AI can be used in Speech recognition which will let a machine to take voice command from the user. AI is helping google to track user data letting company to predict the user requirements and providing user with specific ads. This will change the face of investment management, with professional investors able to make informed investment decisions faster and will for the first time give private investors access to the same advanced stock selection and portfolio construction tools as the professionals. </p><br><br>
+
+				</div>
+				</div>
+				<button id= "color" style ="margin-top: 20px;margin-left:10%;padding: 10px;">Change color!</button>
+				<script>
+					document.getElementById('color').onclick = changeColor; 
+					var currentColor = "blue";
+					function changeColor() { 
+							if(currentColor == "blue"){ 
+							   document.body.style.color = "green";
+							   currentColor = "green";
+							} else if (currentColor =="green"){
+							   document.body.style.color = "yellow";
+							   currentColor = "yellow";
+							}	else if(currentColor == "yellow"){
+								document.body.style.color = "blue";
+							   currentColor = "blue";
+							} 
+						}
+					</script>
+		<style>
+			.main{
+				margin-top: 10%;
+				margin-left: 10%;
+				margin-right: 15%;
+				background-image: url("../IMAGES/blogback.jpg");
+				padding: 2cm;
+				border-radius: 20px;
+				background-size: cover;
+			}
+			#color:hover {
+				background-color: aqua;
+			}
+			#color:active {
+ 			 background-color: aqua;
+  			box-shadow: 0 5px #666;
+ 			 transform: translateY(4px);
+}
+		</style>
+	</body>
+
+		<footer>
+				<div class = contact>
+						<li><a href="https://www.facebook.com/sayuj.singh"><img id = 	"stylefooter" src = "../IMAGES/facebook.png" ></a></li>
+						<li><a href=""><img id = "stylefooter" src = "../IMAGES/youtube.png"style="background-color:black;"></a></li>
+						<li><a href=""><img id = "stylefooter" src = "../IMAGES/insta.png"> </a></li>
+						<li><a href=""><img id = "stylefooter" src = "../IMAGES/twitter.png"></a></li>
+				</div>
+				<p id="demo"></p>
+			<script>
+				var d = new Date();
+				document.getElementById("demo").innerHTML = d;
+			</script>
+		</footer>
+			
+		</html>

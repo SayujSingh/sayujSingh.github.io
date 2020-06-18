@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta name="description" content="Personal PORTFOLIO ">
+			<meta name="keywords" content="HTML,CSS,JavaScript">
+			<meta name="author" content="Sayuj Singh">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sayuj Singh : RESEARCH</title>
+		<link rel="stylesheet" href="../CSS/style.css">						
+	</head>
+	<body>
+		<header>
+			<h4>RESEARCH</h4>
+			<nav>
+				<div class="row">			
+					<a href = "HomePage.html"> <img src = "../IMAGES/name.png" class = "name"></a>
+					<ul class= "main-nav" >
+						<li><a href="CV.html">CV AND PORTFOLIO</a></li>
+						<li><a href="Blog.html">BLOG</a></li>
+						<li><a href="Research.html"style="color:yellow;">Research Section </a></li>
+						<li><a href="contact.html">CONTACT PAGE</a></li>
+					</ul>	
+				</div>
+			
+			</nav>	
+		</header>
+		<div class="slideshow-container">
+		<div class="Research fade">
+			<div class="information">
+				<h2 style="margin-bottom: 1cm; text-align: center;">11coffee</h2>
+				<p>This site used white background with black fonts which is opposite to the website I have created.  It contains live video which plays on the back ground. It is single page website rather than my multi page website. This site provided me with an idea about creating a suitable navigation bar for the site. It increased my creativity and gave me various idea for creating the Navigation bar design and implementation. </p>
+			</div>
+			<div class="website"><a href="http://www.11coffee.co.uk/"target="_blank"><img class="img"src="../IMAGES/Sample1.jpg"></a></div>
+		</div>
+		<div class="Research fade">
+				<div class="information">
+						<h2 style="margin-bottom: 1cm; text-align: center;">Armory</h2>
+						<p>This website used different wallpaper for the background and used images as a links to explore the page rather than my which is simple and easy to use. This site showed me how Different colour combination help the website to pop out than another website. It shows minimalist website can be attractive. </p>
+				</div>
+				<div class="website">
+						<a href="http://preview.themeforest.net/item/amory-premium-wordpress-blog-theme-for-creatives/full_screen_preview/15347323"target="_blank"><img class="img"src="../IMAGES/Sample2.jpg"></a>	
+				</div>
+			</div>
+		<div class="Research fade">
+			<div class="information">
+					<h2 style="margin-bottom: 1cm; text-align: center;">Android Authority</h2>
+					<p>Since this is tech news website which means the site is required to have smooth and easy experience to see the required information. This site used whole title of the blog to find the required information where as in my website I have used only navigation bar to locate the information.  This site has shown how you can properly display blogs without any interference of ads and other contents.</p>
+			</div>
+			<div class="website"><a href="https://www.androidauthority.com/"target="_blank"><img class="img"src="../IMAGES/Sample3.jpg"></a></div>
+		</div>
+		<div class="Research fade">
+				<div class="information">
+						<h2 style="margin-bottom: 1cm; text-align: center;">MIXD</h2>
+						<p>This site used vibrant colours which pops out rather than my website but it provides eye strain in the night while surfing the webpage rather than my which is soothing for the eye. This site shows how portfolio content should be displayed and how you can show content as a form of tiles and animation.</p>
+				</div>
+				<div class="website">
+						<a href="https://www.mixd.co.uk/about/"target="_blank"><img class="img"src="../IMAGES/Sample4.jpg"></a>
+						</div>
+			</div>
+		<div class="Research fade">
+			<div class="information">
+					<h2 style="margin-bottom: 1cm; text-align: center;">Alexboenisch</h2>
+					<p>This site does not have various images, link or pages it used various animation to make the webpage look attractive rather than using images which I have used in this site.  In has given partition to every content a different look. It has given me inspiration to create a website using partition as a holder for different content.</p>
+				
+			</div>
+			<div class="website"><a href="http://www.alexboenisch.com/#"target="_blank"><img class="img"src="../IMAGES/Sample5.jpg"></a></div>
+			</div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+		<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+				
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+				
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("Research");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					  slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+				</script>
+		<style>
+			* {box-sizing: border-box}
+			.slideshow-container {
+ 			 max-width: 1000px;
+  			position: relative;
+  			margin: auto;
+			}
+			.prev, .next {
+				cursor: pointer;
+				position: absolute;
+				top: 50%;
+				width: auto;
+				padding: 16px;
+				margin-top: -22px;
+				color: white;
+				font-weight: bold;
+				font-size: 18px;
+				transition: 0.6s ease;
+				border-radius: 0 3px 3px 0;
+				user-select: none;
+				}
+				.fade {
+					-webkit-animation-name: fade;
+					-webkit-animation-duration: 1.5s;
+					animation-name: fade;
+					animation-duration: 1.5s;
+				}
+				@-webkit-keyframes fade {
+					from {opacity: .4} 
+					to {opacity: 1}
+					}
+
+					@keyframes fade {
+					from {opacity: .4} 
+					to {opacity: 1}
+					}
+			.next {
+				right: 0;
+				border-radius: 3px 0 0 3px;
+				}
+			.Research{
+				display: none;
+				margin-top: 15%;
+				margin-left: 10%;
+				margin-right: 10%;
+				padding: 20px;
+			}
+			.information{
+				padding:10px;
+			}
+			.website{
+				padding: 10px;
+			}
+			.img{
+				height: 10cm;
+				width:20cm;
+			}
+		</style>	
+		</body>
+
+		<footer>
+				<div class = contact>
+						<li><a href="https://www.facebook.com/sayuj.singh"><img id = 	"stylefooter" src = "../IMAGES/facebook.png" ></a></li>
+						<li><a href=""><img id = "stylefooter" src = "../IMAGES/youtube.png"style="background-color:black;"></a></li>
+						<li><a href=""><img id = "stylefooter" src = "../IMAGES/insta.png"> </a></li>
+						<li><a href=""><img id = "stylefooter" src = "../IMAGES/twitter.png"></a></li>
+				</div>
+				<p id="demo"></p>
+				<script>
+						var d = new Date();
+						document.getElementById("demo").innerHTML = d;
+				</script>
+		</footer>
+			
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		  <meta name="description" content="Personal PORTFOLIO ">
+  		<meta name="keywords" content="HTML,CSS,JavaScript">
+  		<meta name="author" content="Sayuj Singh">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+		<title>Sayuj Singh : Developer</title>
+		<link rel="stylesheet" href="../CSS/style.css">						
+	</head>
+	<body>
+		<header>
+			<h4>Developer</h4><!--For navigation Bar-->
+			<nav>
+				<div class="row">
+					<a href = "HomePage.html"> <img src = "../IMAGES/name.png" class = "name"></a>
+					<ul class= "main-nav" >
+						<li><a href="CV.html">CV AND PORTFOLIO</a></li>
+						<li><a href="Blog.html">BLOG</a></li>
+						<li><a href="Research.html">Research Section </a></li>
+						<li><a href="contact.html">CONTACT PAGE</a></li>
+					</ul>	
+				</div>
+			
+			</nav>
+		</header>
+		<div class= homeflex>
+			<div class="main-content-header">
+				<h1> WELCOME TO MY WEBSITE <br> <span class="colorchange">HELLO!</span></h1>
+			
+			</div class = "flexright">
+			<img src = "../IMAGES/flyhigh.jpg" style = " width: 40%;height:40%; ">
+			</div>
+		</div >
+		<div class ="next">
+		<button onclick="myFunction()" class="btn" style="color: yellowgreen;">View More</button>
+		<style>
+			.next{
+				margin-left: 10%
+				}
+			.btn{
+				color: white;
+				padding: 6px 14px;
+				border:4px solid purple;
+				background-color: black;
+				border-radius: 8px;
+				}
+			.btn:hover{
+				color: hotpink;
+				padding: 6px 14px;
+				border:4px solid white;
+				background-color: black;
+				border-radius: 9px;
+				}
+			.homeflex{
+				display: flex;
+				margin-top: 15%;
+				margin-left: 10%;
+				margin-right: 10%;	
+				
+			}
+			.main-content-header{
+				flex:50%;
+			}
+			.flexright{
+				flex:50%;
+				
+			}
+		</style>
+		<div id ="more"> 
+			<h2 style="text-align:left; color: chocolate"> SO..<br> WHO IS SAYUJ ?</h2>
+					<img id = "profilepic" src = "../IMAGES/photo.jpg" style = " width: 30%; margin-top: 30px;")><br>
+					<h3 class = "text">Hi! My name is Sayuj Singh and I am a highly motivated, resourceful,and enthusiastic student, mentor and highly creative programer and developer. I love to play highly competitive online games like Dota, Fortnite, Cs:go and many more. Gaming helps to me to forget about life problems and gives me joy. 
+						<br><br>I am aspire to persue my dream to become  software and app developer.I have special intrest in learning graphics design and to use new technology. 
+					</h3>
+			
+			<h5 style="color: paleturquoise;">
+
+				<br><br>"Persistence is very important. You should not give up unless you are forced to give up." - Elon Musk	
+
+			</h5>
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+				  <div class="numbertext">1 / 3</div>
+				  <img src="../IMAGES/wide.png" style="width:100%;height: 15cm;">
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext">2 / 3</div>
+				  <img src="../IMAGES/family.jpg" style="width:100%;height: 15cm;">
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext">3 / 3</div>
+				  <img src="../IMAGES/logo_transparent.jpg" style="width:100%;height: 15	cm;">
+				</div>
+				
+				</div>
+				<br>
+				
+				<div style="text-align:center">
+				  <span class="dot"></span> 
+				  <span class="dot"></span> 
+				  <span class="dot"></span> 
+				</div>	
+				<script src="../JSCRIPT/JScript.js"></script>
+				
+		</div>
+		<script>
+			document.getElementById ("more").style.display = "none";
+			function myFunction() {
+				
+ 		 		var x = document.getElementById("more");
+			  
+ 		 		if (x.style.display === "none") {
+    				x.style.display = "block";
+  				} 
+				else {
+    				x.style.display = "none";
+  				}
+			}
+		</script>
+
+		<style>
+			.h5{
+				font: italic 1.2em "Fira Sans", serif;
+				text-decoration-style:wavy;
+				
+			}
+			#more{
+				margin-top: 80px;
+				align-self: center;
+				text-align: center;
+				margin-right: 10%;
+				
+			}
+			#profilepic {
+ 				border: 30px solid transparent;
+  				padding: 15px;
+  				-webkit-border-image: url(../IMAGES/borderimage.png) 30% round; 
+  				-o-border-image: url(../IMAGES/borderimage.png) 30% round; 
+  				border-image: url(../IMAGES/borderimage.png) 30% round;
+				}
+			.text{
+				text-align:left;
+				margin-top: 20px;
+			}
+
+		</style>
+		<style>
+			.mySlides {display: none;}
+			
+			
+			/* Slideshow container */
+			.slideshow-container {
+			  max-width: 1000px;
+			  position: relative;
+			  margin: auto;
+			}
+			
+			/* Number text (1/3 etc) */
+			.numbertext {
+			  color: #f2f2f2;
+			  font-size: 12px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  top: 0;
+			}
+			
+			/* The dots/bullets/indicators */
+			.dot {
+			  height: 15px;
+			  width: 15px;
+			  margin: 0 2px;
+			  background-color: #bbb;
+			  border-radius: 50%;
+			  display: inline-block;
+			  transition: background-color 0.6s ease;
+			}
+			
+			.active {
+			  background-color: #717171;
+			}
+			
+			/* Fading animation */
+			.fade {
+			  -webkit-animation-name: fade;
+			  -webkit-animation-duration: 1.5s;
+			  animation-name: fade;
+			  animation-duration: 1.5s;
+			}
+			
+			@-webkit-keyframes fade {
+			  from {opacity: .4} 
+			  to {opacity: 1}
+			}
+			
+			@keyframes fade {
+			  from {opacity: .4} 
+			  to {opacity: 1}
+			}
+			
+			</style>
+		
+		</div>
+	
+	</body>	
+	<footer>
+		<div class = contact>
+				<li><a href="https://www.facebook.com/sayuj.singh"><img id = 	"stylefooter" src = "../IMAGES/facebook.png" ></a></li>
+				<li><a href=""><img id = "stylefooter" src = "../IMAGES/youtube.png"style="background-color:black;"></a></li>
+				<li><a href=""><img id = "stylefooter" src = "../IMAGES/insta.png"> </a></li>
+				<li><a href=""><img id = "stylefooter" src = "../IMAGES/twitter.png"></a></li><br>		
+		</div>
+		<p id="demo"></p>
+		<script>
+				var d = new Date();
+					document.getElementById("demo").innerHTML = d;
+		</script>
+	</footer>
+	
+</html>

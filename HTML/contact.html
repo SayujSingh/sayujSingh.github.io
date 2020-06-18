@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta name="description" content="Personal PORTFOLIO ">
+			<meta name="keywords" content="HTML,CSS,JavaScript">
+			<meta name="author" content="Sayuj Singh">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sayuj Singh : CONTACT</title>
+		<link rel="stylesheet" href="../CSS/style.css">						
+	</head>
+	<body>
+		<header>
+			<h4>Contact</h4>
+			<nav>
+				<div class="row">			
+					<a href = "HomePage.html"> <img src = "../IMAGES/name.png" class = "name"></a>
+					<ul class= "main-nav" >
+						<li><a href="CV.html">CV AND PORTFOLIO</a></li>
+						<li><a href="Blog.html">BLOG</a></li>
+						<li><a href="Research.html">Research Section </a></li>
+						<li><a href="contact.html"style="color:yellow">CONTACT PAGE</a></li>
+					</ul>	
+				</div>
+			</nav>	
+			<div class = "partation">
+				<div class= "left>">
+					<h1 style="font-weight:bold;text-align: center;margin-bottom: 15px;color: yellow;">Lets Connect</h1>
+					<p class="lead">Want to talk to me???? Want me to solve your queries and difficulties???? Then feel sure to SUBSCRIBE,LIKE my pages and also give your comments or feedback...your feedback matters...</p>
+					<h4>Drop me a line, maybe?</h4>
+            		<p>Be free to ask me your queries. I would love to help you out....</p>
+					</div>
+				<div class="right">
+					<form name="messageForm" onsubmit="validateForm()">
+					<p>First name:<br> <input type="text" name="firstname"></p>
+					<p>Last name:<br> <input type="text" name="lastname"></p>
+					<p>Gender:<br> <input type="radio" name="gender" value="male" checked> Male
+					<input type="radio" name="gender" value="female"> Female </p>
+					<p>Email:<br><input type="email:" name="email"></p>
+					<p>Message: <br><textarea name="message" rows="10" cols="30" placeholder="Enter Message"></textarea></p>
+					<p><input type="submit" value="Send"></p>
+					</form>
+					</div>
+			</div>
+				<script>
+					function validateForm() {
+						var fname = document.forms["messageForm"]["firstname"].value;
+						var lname = document.forms["messageForm"]["lastname"].value;
+						var gender = document.forms["messageForm"]["gender"].value;
+						var message = document.forms["messageForm"]["message"].value;
+						var mail = document.forms["messageForm"]["email"].value;
+		
+						if (fname == "" || lname == "" || message == ""|| mail == ""){
+							alert("Empty fields found. Please fill the form.");
+						}
+						else {
+							alert("Thank you for the feedback.");
+						}
+					}
+				</script>	
+				<style>
+					.partation{
+						background-image:  url('../IMAGES/overlay.jpg'); 
+						margin-top: 200px;
+						display: flex;
+						margin-left: 10%;
+						margin-right: 10%;
+						text-align: left;
+						background-size: cover;
+						background-repeat:no-repeat;
+						background-attachment: fixed;
+						background-position: center;
+						padding: 2cm;
+
+					}
+					.left{
+						flex: 60%;
+
+					}
+					.right{
+						flex: 40%
+					}
+				</style>
+		
+		</header>
+		<footer>
+				<div class = contact>
+						<li><a href="https://www.facebook.com/sayuj.singh" target="_blank"><img id = 	"stylefooter" src = "../IMAGES/facebook.png" ></a></li>
+						<li><a href=""><img id = "stylefooter" src = "../IMAGES/youtube.png"style="background-color:black;"></a></li>
+						<li><a href=""><img id = "stylefooter" src = "../IMAGES/insta.png"> </a></li>
+						<li><a href=""><img id = "stylefooter" src = "../IMAGES/twitter.png"></a></li>
+				</div>
+				<p id="demo"></p>
+				<script>
+						var d = new Date();
+						document.getElementById("demo").innerHTML = d;
+				</script>
+		</footer>
+		</body>	
+</html>	
